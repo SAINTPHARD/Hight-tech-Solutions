@@ -1,0 +1,152 @@
+footer {
+  background: linear-gradient(90deg, #3ba37a, #1e90c1);
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+  width: 100vw; /* Garante que preencha toda a largura */
+  margin-bottom: -60px; /* Remove margem inferior */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: left;
+  position: relative; /* Necessário para o traço abaixo */
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+/* Linha separadora abaixo de cada coluna */
+.footer-column::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ddd;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.social-media a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Linha separadora acima do copyright */
+.footer-separator {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 15px;
+}
+
+/* Copyright alinhado ao centro */
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: aliceblue;
+  padding-bottom: 10px;
+}
+
+.footer-bottom p {
+  color: white;
+}
+
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .footer-column h4 {
+    text-align: center;
+  }
+
+  .footer-column ul {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-column h4 {
+    font-size: 1.1rem;
+  }
+
+  .social-media a {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+/* Otimização de performance */
+.social-media a {
+  will-change: background;
+  transform: translateZ(0);
+}

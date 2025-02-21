@@ -1,0 +1,399 @@
+
+@import url('../segurança_infra.html');
+
+/* Cabeçalho da seção .gestao */
+.gestao h2 {
+    text-align: left; /* Alinha o texto do título à esquerda */
+    position: absolute; /* Define uma posição absoluta */
+    top: 15%; /* Posiciona o elemento a partir do topo do contêiner pai */
+    left: 25%; /* Posiciona o elemento 35% a partir da esquerda do contêiner pai */
+    transform: translate(-50%, -50%); /* Centraliza o elemento na posição dada */
+    color: var(--cor-de-fundo); /* Define a cor do texto */
+    font-weight: 500; /* Define o peso da fonte */
+    font-size: 2.2rem; /* Define o tamanho da fonte */
+    font-family: bold; /* Define a família da fonte (opcional)*/
+}
+
+.gestao img {
+    width: 100%; /* Define a largura da imagem para ocupar todo o espaço horizontal*/
+    height: 250px; /* Define uma altura fixa para a imagem */
+    margin-bottom: 1px; /* Define uma margem abaixo da imagem */
+}
+
+/* Estilos para a seção de benefícios */
+.benefits-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    padding: 20px;
+    justify-items: center; /* Centraliza os itens dentro do grid */
+    margin-left: 10rem;
+    margin-top: 4rem;
+    
+  }
+  
+  .benefit-card {
+    background-color: #fff;   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Expande os cartões para o tamanho total do contêiner */
+    max-width: 400px; /* Define uma largura máxima para cada cartão */
+  }
+  
+  
+  .icon img {
+    width: 55px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* Estilização do container principal */
+
+
+/* Estilização do botão */
+.button__contato {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #FF6500;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover do botão */
+.button__contato:hover {
+  background-color: var(--cor-de-fundo); 
+
+}
+
+/* Container principal em duas colunas */
+.container__dicas-wrapper {
+  display: flex; /* Configura um layout em flexbox para permitir que os elementos filhos fiquem lado a lado */
+  align-items: flex-start; /* Alinha os itens no início do eixo transversal (no topo) */
+  max-width: 1200px; /* Define uma largura máxima para o container */
+  margin: auto; /* Centraliza o container horizontalmente na página */
+  padding: 20px; /* Adiciona um espaço interno ao redor do container */
+}
+
+/* Estiliza a imagem na esquerda */
+.imagem-esquerda {
+  flex: 0.5; /* Define que a imagem ocupará metade do espaço do container */
+  max-width: 400px; /* Define uma largura máxima para a imagem */
+  margin-right: 20px; /* Adiciona espaço entre a imagem e o conteúdo de texto */
+}
+
+.imagem-esquerda img {
+  width: 100%; /* Faz a imagem ocupar toda a largura disponível do seu container */
+  height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Estiliza o container de dicas */
+.container__dicas {
+  flex: 1; /* Define que o container de texto ocupa o restante do espaço disponível */
+  font-family: Arial, sans-serif; /* Define a fonte principal */
+  color: #2B2B2B; /* Define a cor principal do texto */
+}
+
+/* Título principal */
+.container__dicas h5 {
+  color: #3948A0; /* Define a cor do título */
+  font-size: 1.8rem; /* Define o tamanho da fonte do título */
+  font-weight: 700; /* Define o peso da fonte para deixá-la em negrito */
+  margin-bottom: 25px; /* Adiciona um espaço abaixo do título */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estiliza cada dica individual */
+.dica {
+  margin-bottom: 30px; /* Adiciona um espaço abaixo de cada dica */
+}
+
+/* Estilo do título de cada dica */
+.dica h3 {
+  color: #3948A0; /* Define a cor do título da dica */
+  font-size: 1.2rem; /* Define o tamanho da fonte do título */
+  font-weight: 600; /* Deixa o título com um peso moderado */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+/* Parágrafo de texto dentro da dica */
+.dica p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo */
+  line-height: 1.5; /* Define o espaçamento entre as linhas do parágrafo */
+  color: #606060; /* Define uma cor secundária para o texto */
+  text-align: justify; /* Justifica o texto para uma aparência mais uniforme */
+}
+
+/* Exibe o número da dica antes do título */
+.dica::before {
+  content: attr(data-number) ". "; /* Insere o número da dica com base no atributo data-number */
+  font-weight: bold; /* Deixa o número em negrito */
+  color: #3948A0; /* Define a cor do número */
+  font-size: 1.2rem; /* Define o tamanho da fonte do número */
+  margin-right: 5px; /* Adiciona um pequeno espaço após o número */
+  display: inline-block; /* Garante que o número fique em linha com o título */
+}
+
+/* Botão de contato */
+.button__contato {
+  background-color: var(--cor-de-link);
+    text-decoration: none;
+    color: var(--cor-segundario);
+    padding: 25px 82px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 12rem;
+}
+
+.button__contato:hover {
+  background-color: var(--azul-degrade);
+  border: 1px solid var(--cor-de-link);
+  color: var(--cor-de-link); /* Muda a cor de fundo do botão ao passar o mouse */
+}
+
+
+/* =================================================== */
+/* RESPONSIVIDADE PARA DIFERENTES DISPOSITIVOS */
+/* =================================================== */
+
+/* 
+  Estratégia de responsividade:
+  - Mobile First com adaptação progressiva
+  - 4 breakpoints principais
+  - Ajustes progressivos de layout e tipografia
+*/
+
+/* --------------------------------------------------- */
+/* TABLETS EM MODO PAISAGEM (ATÉ 1024PX) */
+/* --------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+
+  /* Ajuste do título principal */
+  .gestao h2 {
+    font-size: 2rem;
+    /* Redução do tamanho da fonte */
+    left: 30%;
+    /* Reposicionamento horizontal */
+    top: 12%;
+    /* Reposicionamento vertical */
+  }
+
+  /* Container de benefícios */
+  .benefits-section {
+    margin-left: 5rem;
+    /* Redução da margem esquerda */
+  }
+
+  /* Container de dicas de proteção */
+  .container__dicas-wrapper {
+    max-width: 90%; /* Aumento da largura máxima */
+  }
+
+  /* Botão de contato */
+  .button__contato {
+    margin-left: 6rem;
+    /* Centralização progressiva */
+  }
+}
+
+/* --------------------------------------------------- */
+/* TABLETS EM MODO RETRATO (ATÉ 768PX) */
+/* --------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+  /* Ajustes no cabeçalho */
+  .gestao h2 {
+    font-size: 1.8rem;
+    /* Nova redução de fonte */
+    left: 35%;
+    /* Centralização horizontal */
+    top: 10%;
+    /* Posicionamento vertical */
+  }
+
+  /* Mudança de grid para 1 coluna */
+  .benefits-section {
+    grid-template-columns: 1fr;
+    /* Layout single column */
+    margin-left: 2rem;
+    /* Margem reduzida */
+    margin-top: 2rem;
+    /* Espaço superior ajustado */
+  }
+
+  /* Cartões de benefícios */
+  .benefit-card {
+    max-width: 90%;
+    /* Aumento da largura máxima */
+  }
+
+  /* Container principal - mudança para coluna */
+  .container__dicas-wrapper {
+    flex-direction: column;
+    /* Empilhamento vertical */
+    align-items: center;
+    /* Centralização horizontal */
+  }
+
+  /* Imagem da seção de dicas */
+  .imagem-esquerda {
+    max-width: 80%;
+    /* Largura controlada */
+    margin-right: 0;
+    /* Remoção de margem direita */
+    margin-bottom: 2rem;
+    /* Espaço inferior adicionado */
+  }
+
+  /* Centralização definitiva do botão */
+  .button__contato {
+    margin-left: 0;
+    /* Remoção de margem específica */
+    text-align: center;
+    /* Alinhamento central */
+    display: block;
+    /* Garantia de comportamento block */
+    width: fit-content;
+    /* Largura conforme conteúdo */
+    margin: 40px auto 1rem;
+    /* Margens automáticas */
+  }
+}
+
+/* --------------------------------------------------- */
+/* CELULARES GRANDES (ATÉ 480PX) */
+/* --------------------------------------------------- */
+@media screen and (max-width: 480px) {
+
+  /* Ajuste fino do título */
+  .gestao h2 {
+    font-size: 1.5rem;
+    /* Tamanho mobile */
+    left: 50%;
+    /* Centralização total */
+    top: 15%;
+    /* Posição vertical ajustada */
+    width: 80%;
+    /* Largura controlada */
+    text-align: center;
+    /* Alinhamento central */
+    transform: translate(-50%, -50%);
+    /* Centralização precisa */
+  }
+
+  /* Redução da altura da imagem */
+  .gestao img {
+    height: 180px;
+    /* Altura menor para mobile */
+  }
+
+  /* Ajuste final dos benefícios */
+  .benefits-section {
+    margin-left: 0;
+    /* Remoção de margem */
+    padding: 10px;
+    /* Redução de padding */
+  }
+
+  /* Cartões em mobile */
+  .benefit-card {
+    padding: 15px;
+    /* Espaçamento interno reduzido */
+  }
+
+  /* Ícones menores */
+  .icon img {
+    width: 45px;
+    /* Redução proporcional */
+    height: 40px;
+    /* Manutenção da aspect ratio */
+  }
+
+  /* Título das dicas */
+  .container__dicas h5 {
+    font-size: 1.5rem;
+    /* Tamanho mobile */
+    text-align: center;
+    /* Centralização */
+  }
+
+  /* Ajustes tipográficos */
+  .dica h3 {
+    font-size: 1.1rem;
+    /* Hierarquia mantida */
+  }
+
+  .dica p {
+    font-size: 0.9rem;
+    /* Legibilidade mobile */
+  }
+
+  /* Botão otimizado para touch */
+  .button__contato {
+    padding: 15px 40px;
+    /* Área de toque adequada */
+    font-size: 1rem;
+    /* Tamanho legível */
+  }
+}
+
+/* --------------------------------------------------- */
+/* CELULARES PEQUENOS (ATÉ 320PX) */
+/* --------------------------------------------------- */
+@media screen and (max-width: 320px) {
+
+  /* Últimos ajustes do título */
+  .gestao h2 {
+    font-size: 1.3rem;
+    /* Tamanho mínimo legível */
+    top: 12%;
+    /* Otimização espacial */
+  }
+
+  /* Redução de elementos textuais */
+  .benefit-card h3 {
+    font-size: 16px;
+    /* Manutenção da hierarquia */
+  }
+
+  .benefit-card p {
+    font-size: 12px;
+    /* Texto mínimo legível */
+  }
+
+  /* Ajuste final das dicas */
+  .container__dicas h5 {
+    font-size: 1.3rem;
+    /* Tamanho mínimo para título */
+  }
+
+  /* Botão ultra compacto */
+  .button__contato {
+    padding: 12px 30px;
+    /* Formato mobile pequeno */
+  }
+}
+

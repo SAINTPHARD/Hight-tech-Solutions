@@ -1,0 +1,337 @@
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+/* Css da primeira parte */
+.segurança {
+    position: relative;
+
+}
+
+.segurança h2 {
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-de-fundo); /* Cor do texto */
+    text-align: left;
+    font-weight: 500;
+    font-size: 2.2rem;
+    font-family: bold;
+}
+
+.segurança img {
+    width: 100%;
+    
+}
+
+
+.container__seguranca {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 5rem; /* Espaçamento inferior para separar o título dos cards */
+    /* margin-left: 14rem; */
+    /* margin-right: 14rem; */
+}
+
+.seguranca__text {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.seguranca__text h2 {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: bold;
+    color: var(--cor-de-titulo);
+}
+
+.seguranca__text img {
+    width: 25%;
+}
+
+.seguranca__text p {
+    color: var(--preto);
+    font-size: 15px;
+    font-family:sans-serif;
+    text-align:center;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+/* Css da segunda parte */
+.container__todos {
+    background-image: url('../imagens/Background2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px;
+    height: 450px;
+}
+
+.container__todos h2 {
+    font-size: 30px;
+    color: #4a2c3d;
+    margin-bottom: 2px;
+    text-align: left;
+    margin-left: 12rem;
+    font-family: normal;
+}
+
+.container__todos p {
+    font-size: 15px;
+    color: #4a2c3d;
+    text-align: left;
+    /* margin-bottom: 2rem; */
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 10rem;
+}
+
+.button__contato {
+    background-color: var(--cor-de-link);
+    text-decoration: none;
+    color: var(--cor-segundario);
+    padding: 25px 82px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 12rem;
+}
+
+.button__contato:hover {
+    background-color: var(--azul-degrade);
+    border: 1px solid var(--cor-de-link);
+    color: var(--cor-de-link);
+}
+
+/*css da terceira parte*/
+.container__protecao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container__protecao h2 {
+    font-size: 2rem;
+    color: #1a2e6e;
+    margin-bottom: 30px;
+}
+
+/* Layout de conteúdo */
+.protecao__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.protecao__imagem {
+    max-width: 300px;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Added to allow cards to wrap on multiple lines */
+    justify-content: center; /* Center cards horizontally */
+    gap: 15px;
+  }
+  
+  .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Added padding for content */
+    height: 200px; /* Maintained height */
+    width: 300px; /* Maintained width */
+    border-radius: 10px;
+    color: white;
+    background-color: #f43f5e; /* Default background color */
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card.blue {
+    background-color: #3b82f6;
+  }
+  
+  .cards .card.green {
+    background-color: #22c55e;
+  }
+  
+  .cards .card p {
+    font-size: 1em; /* Consistent font size for all paragraphs */
+    margin-bottom: 1rem; /* Consistent margin for all paragraphs */
+    text-align: center;
+  }
+/* 
+  .second-text {
+    font-size: 1em;
+    margin-bottom: 1rem;
+    text-align: center;
+  } */
+  
+  .cards .card p.tip {
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(5px); /* Reduced blur for better visibility */
+    transform: scale(0.95, 0.95); /* Less aggressive scale on non-hovered cards */
+  }
+
+
+/* css da quarta parte */
+
+.container__protection{
+    font-size: 1.2rem;
+    /* color: #1646e2; */
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.container__protection h3 {
+    font-size: 3rem;
+    color: #1a2e6e;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.carta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    position: relative;
+
+    --glow-color: rgb(217, 176, 255);
+ --glow-spread-color: rgba(191, 123, 255, 0.781);
+ --enhanced-glow-color: rgb(231, 206, 255);
+ --btn-color: rgb(100, 61, 136);
+ border: .25em solid var(--glow-color);
+ padding: 6em 3em;
+ color: var(--glow-color);
+ font-size: 15px;
+ font-weight: bold;
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ text-shadow: 0 0 .5em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+}
+
+.carta__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.carta__text {
+    position: relative;
+    text-align: center; /* Centraliza o conteúdo do card */
+    padding: 10px; /* Adiciona espaço interno ao card */
+    border: 1px solid #ddd; /* Adiciona uma borda */
+    border-radius: 5px; /* Arredonda as bordas */
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    max-height: 60px;
+}
+
+.carta__text:hover {
+    transform: scale(1.03);
+    
+}
+.protecao__content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.carta__text img {
+    height: 30px;
+    width: 30px; /* Ajusta o tamanho da imagem */
+    margin-bottom: 5rem; /*Cria espaço entre a imagem e o texto*/
+    position: absolute;
+    top: 10px;  /* Posiciona a imagem vertical da imagem */
+    left: 50%; /* Centraliza a imagem horizontalmente */
+    transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+    width: 50px; 
+    z-index: 1; /* Garante que a imagem fique acima do texto */
+}
+
+.carta__text p {
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Centraliza o conteúdo do card */
+    margin-top: 2rem;
+    color: var(--preto);
+    font-size: 15px;
+    font-family:sans-serif;
+    margin: 5px;
+}
+
+/*Botao de voltar  */
+.back-button {
+    background-color: var(--cor-de-link);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    top: auto;
+    /* right: 10px; */
+    left: 10px;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+
+.back-button:hover {
+    background-color: var(--cor-de-link);
+    color: var(--cor-de-fundo);
+}
+
+

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Estilo global */
+.portfolios {
+    display: grid;
+    /* background-color: rgb(235, 233, 233); */
+    font-family: 'Poppins', Arial, sans-serif; /* Define a fonte padrão */
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Título principal */
+.portfolios h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: normal;
+    color: rgb(27, 27, 126); /* Cor azul escuro */
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+/* Contêiner dos cards */
+.container__portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas responsivas */
+    gap: 15px; /* Espaçamento entre os cards */
+    max-width: 1000px; /* Largura máxima do contêiner */
+    height: 800px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 8rem; /* Espaço inferior */
+    margin-top: 5rem; /* Espaço superior */
+}
+
+/* Estilização individual dos cards */
+.portfolio {
+    background-color: rgb(235, 233, 233);;
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave ao passar o mouse */
+    cursor: pointer; /* Cursor de ponteiro */
+    text-align: center; /* Alinha o conteúdo ao centro */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa as bordas */
+    height: 300px; /* Altura fixa para consistência */
+}
+
+/* Efeito hover nos cards */
+.portfolio:hover {
+    transform: translateY(-5px); /* Eleva o card levemente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* Imagem dentro do card */
+.portfolio img {
+    max-width: 100px; /* Largura máxima da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+/* Título do card */
+.portfolio h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF6500; /* Cor laranja */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+/* Descrição do card */
+.portfolio .description {
+    font-size: 1rem;
+    color: #666; /* Cor cinza */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-bottom: 10px; /* Espaçamento abaixo da descrição */
+}
+
+/* Link "Leia mais" */
+.portfolio .leia-mais {
+    display: inline-block; /* Exibe como bloco clicável */
+    margin-top: 10px; /* Espaçamento acima do link */
+    color: #FF6500; /* Cor laranja */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito hover no link "Leia mais" */
+.portfolio .leia-mais:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+    color: #0056b3; /* Cor azul mais escura */
+}
+
+/* Responsividade */
+
+/* Telas grandes (desktops) */
+@media (min-width: 1200px) {
+    .container__portfolio {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
+    }
+
+    .portfolios h1 {
+        font-size: 2.7rem; /* Tamanho padrão para telas grandes */
+    }
+
+    .portfolio {
+        padding: 20px; /* Espaçamento padrão */
+        height: 400px; /* Altura fixa */
+    }
+}
+
+/* Tablets e laptops (1024px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container__portfolio {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+    }
+
+    .portfolios h1 {
+        font-size: 2.2rem; /* Tamanho reduzido para tablets */
+    }
+
+    .portfolio {
+        padding: 15px; /* Espaçamento reduzido */
+        height: auto; /* Altura automática para ajustar o conteúdo */
+    }
+
+    .portfolio h3 {
+        font-size: 1.3rem; /* Tamanho reduzido para títulos */
+    }
+
+    .portfolio .description {
+        font-size: 0.9rem; /* Tamanho reduzido para descrições */
+    }
+}
+
+/* Smartphones em modo paisagem (576px - 767px) */
+@media (max-width: 767px) {
+    .container__portfolio {
+        grid-template-columns: 1fr; /* 1 coluna para smartphones em modo paisagem */
+    }
+
+    .portfolios h1 {
+        font-size: 2rem; /* Tamanho reduzido para smartphones */
+    }
+
+    .portfolio {
+        padding: 10px; /* Espaçamento reduzido */
+        height: auto; /* Altura automática */
+    }
+
+    .portfolio h3 {
+        font-size: 1.2rem; /* Tamanho reduzido para títulos */
+    }
+
+    .portfolio .description {
+        font-size: 0.8rem; /* Tamanho reduzido para descrições */
+    }
+
+    .portfolio .leia-mais {
+        font-size: 0.8rem; /* Tamanho reduzido para links */
+        padding: 3px 5px; /* Espaçamento reduzido */
+    }
+}
+
+/* Smartphones em modo retrato (< 576px) */
+@media (max-width: 575px) {
+    .container__portfolio {
+        grid-template-columns: 1fr; /* 1 coluna para smartphones em modo retrato */
+    }
+
+    .portfolios h1 {
+        font-size: 1.5rem; /* Tamanho ainda menor para smartphones pequenos */
+    }
+
+    .portfolio {
+        padding: 8px; /* Espaçamento mínimo */
+        height: auto; /* Altura automática */
+    }
+
+    .portfolio h3 {
+        font-size: 1.1rem; /* Tamanho mínimo para títulos */
+    }
+
+    .portfolio .description {
+        font-size: 0.7rem; /* Tamanho mínimo para descrições */
+    }
+
+    .portfolio .leia-mais {
+        font-size: 0.7rem; /* Tamanho mínimo para links */
+        padding: 2px 4px; /* Espaçamento mínimo */
+    }
+}

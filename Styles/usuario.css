@@ -1,0 +1,76 @@
+/* Estilos globais para o corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte principal e fallback */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  background-color: #f5f5f5; /* Cor de fundo clara para melhor contraste */
+}
+
+/* Estilização do cabeçalho principal */
+.header {
+  background-color: #002244; /* Cor de fundo azul escuro */
+  color: #fff; /* Texto em branco para contraste */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem; /* Espaçamento interno */
+}
+
+/* Container principal do conteúdo */
+.content {
+  max-width: 800px; /* Largura máxima para melhor leitura */
+  margin: 2rem auto; /* Centraliza o conteúdo e adiciona espaço vertical */
+  padding: 1rem; /* Espaçamento interno */
+  background: #fff; /* Fundo branco */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de elevação */
+}
+
+/* Estilo para parágrafos dentro do conteúdo */
+.content p {
+  margin: 1rem 0; /* Espaçamento vertical entre parágrafos */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+/* Estilização dos botões */
+.button {
+  display: inline-block; /* Permite propriedades de bloco mantendo inline */
+  padding: 0.5rem 1rem; /* Espaçamento interno */
+  margin: 2rem auto; /* Centraliza e adiciona espaço vertical */
+  text-align: center; /* Centraliza o texto */
+  background-color: #ff6600; /* Cor de fundo laranja */
+  color: #fff; /* Texto em branco */
+  text-decoration: none; /* Remove sublinhado de links */
+  border-radius: 4px; /* Cantos levemente arredondados */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Efeito hover para botões */
+.button:hover {
+  background-color: #cc5200; /* Escurece o botão ao passar o mouse */
+}
+
+/* Adaptações para tablets - telas até 768px */
+@media screen and (max-width: 768px) {
+  .content {
+    max-width: 90%; /* Aumenta a largura relativa */
+    margin: 1rem auto; /* Reduz margens */
+  }
+}
+
+/* Adaptações para smartphones - telas até 480px */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0.5rem; /* Reduz padding do cabeçalho */
+  }
+
+  .content {
+    max-width: 95%; /* Aumenta ainda mais a largura relativa */
+    margin: 0.5rem auto; /* Reduz mais as margens */
+    padding: 0.5rem; /* Reduz o padding */
+  }
+
+  .button {
+    display: block; /* Faz o botão ocupar toda a largura */
+    width: 100%; /* Largura total */
+    margin: 1rem auto; /* Ajusta margens */
+  }
+}

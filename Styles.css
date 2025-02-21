@@ -1,0 +1,17 @@
+
+@import url('../segurança_infra.html');
+
+:root {
+    --cor-de-fundo: white;
+    --preto: #1A1A1D;
+    --cor-de-link: blue;
+    --azul-escuro: #FF8343;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --cor-de-titulo: #002F52;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}

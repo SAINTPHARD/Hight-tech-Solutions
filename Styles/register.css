@@ -1,0 +1,151 @@
+/* Define os estilos básicos do corpo da página */
+body {
+    display: flex;                /* Usa flexbox para layout */
+    justify-content: center;      /* Centraliza horizontalmente */
+    align-items: center;          /* Centraliza verticalmente */
+    min-height: 100vh;           /* Altura mínima de 100% da viewport */
+    background: #f8f9fa;         /* Cor de fundo cinza claro */
+    margin: 0;                   /* Remove margens externas */
+    padding: 20px;               /* Adiciona espaçamento interno */
+    box-sizing: border-box;      /* Inclui padding no cálculo da largura */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Define os estilos do formulário container */
+.container__form {
+    background: #fff;            /* Fundo branco */
+    margin-top: 30px;           /* Margem superior */
+    padding: 30px;              /* Espaçamento interno */
+    text-align: center;         /* Centraliza o texto */
+    font-family: 'Courier New', Courier, monospace; /* Define fonte monospace */
+    margin-bottom: 10px;        /* Margem inferior */
+    align-items: center;        /* Centraliza itens verticalmente */
+}
+
+/* Define os estilos do container principal */
+.container {
+    background: white;          /* Fundo branco */
+    padding: 30px;             /* Espaçamento interno */
+    border-radius: 10px;       /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 100%;              /* Largura total disponível */
+    max-width: 500px;         /* Largura máxima */
+    text-align: center;       /* Centraliza o texto */
+    margin-right: 25rem;      /* Margem direita */
+    margin-left: 25rem;       /* Margem esquerda */
+}
+
+/* Define o estilo do título */
+h2 {
+    margin-bottom: 20px;      /* Margem inferior */
+    color: #333;             /* Cor do texto cinza escuro */
+}
+
+/* Define o estilo do grupo de formulário */
+.form-group {
+    margin-bottom: 20px;      /* Margem inferior */
+    text-align: left;        /* Alinha texto à esquerda */
+}
+
+/* Define o estilo das labels */
+label {
+    display: block;          /* Exibe como bloco */
+    margin-bottom: 8px;      /* Margem inferior */
+    font-weight: bold;       /* Texto em negrito */
+    color: #555;            /* Cor do texto cinza */
+}
+
+/* Define o estilo dos campos de entrada e select */
+input, select {
+    width: 100%;            /* Largura total */
+    padding: 12px;          /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 5px;     /* Bordas arredondadas */
+    font-size: 16px;       /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+/* Define o estilo do botão */
+button {
+    width: 100%;           /* Largura total */
+    padding: 12px;         /* Espaçamento interno */
+    background: #007bff;   /* Cor de fundo azul */
+    color: white;          /* Texto branco */
+    border: none;          /* Remove borda */
+    border-radius: 5px;    /* Bordas arredondadas */
+    cursor: pointer;       /* Cursor tipo pointer */
+    font-size: 16px;      /* Tamanho da fonte */
+    transition: background 0.3s ease; /* Transição suave ao hover */
+}
+
+/* Define o efeito hover do botão */
+button:hover {
+    background: #0056b3;   /* Cor de fundo azul mais escura ao hover */
+}
+
+/* Responsividade para todos  */
+/* Estilos para desktop grande */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* Estilos para tablet */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para celular */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .container__form {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    input,
+    select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Estilos para celulares muito pequenos */
+@media (max-width: 320px) {
+    .container {
+        padding: 10px;
+    }
+
+    input,
+    select {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

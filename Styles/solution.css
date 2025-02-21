@@ -1,0 +1,142 @@
+
+
+
+/* Estilo principal da seção .solution */
+.solution {
+    background: hsla(272, 78%, 16%, 1);
+    background: linear-gradient(90deg, hsla(272, 78%, 16%, 1) 0%, hsla(17, 60%, 52%, 1) 100%);
+    color: var(--cor-de-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem;
+    text-align: left;
+    margin-top: 60px;
+    flex-wrap: wrap; /* Permitir que os elementos quebrem linha em telas menores */
+}
+
+/* Estilo para o texto e container da solução */
+.container__solution {
+    text-align: left;
+    flex: 1;
+    margin-left: 5.5rem;
+}
+
+/* Estilo para o título */
+.container__solution h2 {
+    color: var(--cor-de-fundo);
+    font-size: 4rem;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+/* Estilo para o parágrafo */
+.container__solution p {
+    color: var(--cor-de-fundo);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+/* Estilo para a imagem */
+.image {
+    width: 25%;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10rem;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+/* Estilo para o botão "informa-mais" */
+.informa-mais {
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+    border-radius: 35px;
+    border: solid 1px var(--cor-principal);
+    padding: 20px 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.informa-mais:hover {
+    background-color: var(--azul-degrade);
+    color: var(--cor-de-fundo);
+    border: solid 1px var(--cor-de-fundo);
+}
+
+/* Estilos responsivos para a seção solution */
+@media (max-width: 1024px) {
+    .solution {
+        flex-direction: column; /* Muda a direção do flex para empilhar o conteúdo */
+        text-align: center; /* Centraliza o texto em telas menores */
+        padding: 2.5rem;
+    }
+
+    .container__solution {
+        margin-left: 0;
+    }
+
+    .container__solution h2 {
+        font-size: 3rem; /* Reduz o tamanho do título */
+    }
+
+    .container__solution p {
+        font-size: 18px; /* Reduz o tamanho do texto do parágrafo */
+    }
+
+    .image {
+        width: 50%; /* Reduz o tamanho da imagem em tablets */
+        margin-right: 0;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .solution {
+        padding: 2rem;
+    }
+
+    .container__solution h2 {
+        font-size: 2.5rem; /* Ajusta o tamanho do título em dispositivos menores */
+    }
+
+    .container__solution p {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 100%; /* Imagem ocupa 100% da largura em telas pequenas */
+    }
+
+    .informa-mais {
+        padding: 15px 30px; /* Reduz o padding do botão */
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container__solution h2 {
+        font-size: 2rem; /* Reduz ainda mais o tamanho do título em smartphones */
+    }
+
+    .container__solution p {
+        font-size: 14px;
+    }
+
+    .solution {
+        padding: 1.5rem;
+    }
+
+    .informa-mais {
+        padding: 10px 20px; /* Ajusta o padding do botão em telas muito pequenas */
+    }
+}

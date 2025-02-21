@@ -1,0 +1,174 @@
+/* Estilo geral */
+/* Seção .cloud */
+/* Estilo geral */
+/* Seção .cloud */
+
+.cloud h2 {                                    /* Estilo para o título dentro da seção cloud */
+    text-align: left;                         /* Alinha o texto à esquerda */
+    position: absolute;                       /* Posiciona o elemento de forma absoluta */
+    top: 25%;                                /* Define a posição a 25% do topo */
+    left: 25%;                               /* Define a posição a 25% da esquerda */
+    transform: translate(-50%, -50%);         /* Centraliza o elemento usando transformação */
+    color: var(--cor-de-fundo);              /* Cor do texto usando variável CSS */
+    font-weight: 500;                        /* Peso da fonte médio */
+    font-size: 2.2rem;                       /* Tamanho da fonte */
+    font-family: bold;                       /* Família da fonte em negrito */
+}
+
+.cloud img {                                  /* Estilo para imagens na seção cloud */
+    width: 100%;                             /* Largura total do container */
+    height: auto;                            /* Altura automática mantendo proporção */
+    margin-bottom: 1px;                      /* Margem inferior pequena */
+}
+
+.gerenciamento {                             /* Estilo para seção de gerenciamento */
+    text-align: center;                      /* Centraliza o texto */
+    margin: 5px auto;                        /* Margem automática nas laterais */
+    padding: 1rem;                           /* Preenchimento interno */
+}
+
+.gerenciamento h2 {                          /* Estilo para título do gerenciamento */
+    font-size: 1.5rem;                       /* Tamanho da fonte */
+    font-weight: bold;                       /* Peso da fonte em negrito */
+    padding: 2rem;                           /* Preenchimento interno */
+}
+
+.content-section {                            /* Estilo para seção de conteúdo */
+    display: flex;                           /* Layout flexível */
+    align-items: center;                     /* Alinha itens ao centro verticalmente */
+    gap: 2rem;                              /* Espaçamento entre elementos */
+    padding: 4rem 2rem;                      /* Preenchimento interno */
+}
+
+.image {                                     /* Estilo para imagens */
+    max-width: 400px;                        /* Largura máxima */
+    height: auto;                            /* Altura automática */
+}
+
+.text {                                      /* Estilo para texto */
+    max-width: 50%;                         /* Largura máxima */
+}
+
+.text h3 {                                  /* Estilo para subtítulos */
+    color: var(--cor-azul);                 /* Cor do texto usando variável CSS */
+    margin-bottom: 1rem;                    /* Margem inferior */
+}
+
+.text p {                                   /* Estilo para parágrafos */
+    margin-bottom: 1rem;                    /* Margem inferior */
+    line-height: 1.6;                       /* Altura da linha */
+}
+
+.container__final {                         /* Estilo para container final */
+    display: flex;                          /* Layout flexível */
+    align-items: center;                    /* Alinha itens ao centro */
+    justify-content: space-between;         /* Distribui espaço entre elementos */
+    padding: 2rem;                          /* Preenchimento interno */
+}
+
+.container__final img {                     /* Estilo para imagens do container final */
+    max-width: 500px;                       /* Largura máxima */
+    height: auto;                           /* Altura automática */
+}
+
+.container__vantagem {                      /* Estilo para seção de vantagens */
+    max-width: 500px;                       /* Largura máxima */
+}
+
+.container__vantagem h2 {                   /* Estilo para título das vantagens */
+    color: var(--cor-azul);                /* Cor do texto usando variável CSS */
+    margin-bottom: 1rem;                    /* Margem inferior */
+}
+
+.container__vantagem ul {                   /* Estilo para lista de vantagens */
+    list-style: none;                       /* Remove marcadores da lista */
+    padding: 0;                             /* Remove preenchimento */
+    margin-bottom: 2rem;                    /* Margem inferior */
+}
+
+.container__vantagem li {                   /* Estilo para itens da lista */
+    margin-bottom: 1rem;                    /* Margem inferior */
+    display: flex;                          /* Layout flexível */
+    align-items: center;                    /* Alinha itens ao centro */
+    gap: 0.5rem;                           /* Espaçamento entre elementos */
+}
+
+.container__vantagem li::before {           /* Estilo para marcador personalizado */
+    content: "•";                           /* Adiciona bullet point */
+    color: var(--cor-azul);                /* Cor do marcador */
+    font-size: 1.5rem;                      /* Tamanho do marcador */
+}
+
+/* Responsividade geral para todos os tipos de dispositivos */
+
+@media (max-width: 768px) {
+    .cloud h2 {
+        font-size: 1.5rem;
+        top: 20%;
+        left: 50%;
+        text-align: center;
+    }
+}
+
+/* Responsividade para .gerenciamento */
+@media (max-width: 768px) {
+    .gerenciamento h2 {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+
+/* Responsividade para .content-section */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .image {
+        max-width: 300px;
+    }
+
+    .text {
+        max-width: 100%;
+    }
+}
+
+/* Responsividade para .container__final */
+@media (max-width: 1024px) {
+    .container__final {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .container__final img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .container__vantagem {
+        text-align: center;
+    }
+
+    .container__vantagem h2 {
+        text-align: center;
+    }
+
+    .container__vantagem ul {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+/* Ajuste dos botões para telas menores */
+@media (max-width: 768px) {
+
+    .botao__demonstracao,
+    .botao__servico,
+    .button__vantagem {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

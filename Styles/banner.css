@@ -1,0 +1,205 @@
+/* Estilo global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do banner */
+.container__banner {
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin: auto; /* Centraliza o container */
+    width: 100%; /* Largura total do container */
+    height: 100%; /* Altura total da tela */
+    padding: 5rem; /* Espaçamento interno padrão */
+    background-image: url('../Img/Background2\ \(2\).png');
+    background-size: cover; /* Garante que a imagem cubra todo o container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    color: var(--cor-de-fundo); /* Cor do texto */
+    position: relative; /* Permite posicionamento relativo para elementos internos */
+}
+
+/* Linha horizontal (hr) */
+hr {
+    width: 50%; /* Largura da linha */
+    height: 2px; /* Espessura da linha */
+    border: none; /* Remove borda padrão */
+    background-color: var(--cor-de-link); /* Cor da linha */
+    margin: 20px auto 20px 0; /* Margem acima, abaixo e à esquerda */
+}
+
+/* Títulos */
+h3 {
+    font-size: 1.8rem; /* Tamanho maior para destaque */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+    color: var(--cor-de-fundo);
+}
+
+/* Subtítulo */
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: var(--cor-de-fundo);
+}
+
+/* Parágrafo */
+.container__banner p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    margin-bottom: 2rem; /* Espaço maior antes dos botões */
+    color: var(--cor-de-fundo);
+    text-align: left;
+}
+
+/* Botão "Começar" */
+.comecar {
+    background-color: var(--cor-de-link); /* Cor de fundo principal */
+    color: var(--cor-segundario); /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 15px 40px; /* Espaçamento interno ajustado */
+    border: none; /* Remove borda */
+    border-radius: 40px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 1.2rem;
+    transition: all 0.3s ease; /* Transição suave */
+    display: inline-block; /* Garante que o botão seja um bloco clicável */
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.comecar:hover {
+    background-color: var(--azul-degrade); /* Gradiente ao passar o mouse */
+    border: 1px solid var(--cor-de-link); /* Borda destacada */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    color: white; /* Cor do texto */
+}
+
+/* Botão "Saiba mais" */
+.conhecer {
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 15px 40px; /* Espaçamento interno ajustado */
+    border: 1px solid var(--cor-de-link); /* Borda destacada */
+    border-radius: 40px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 1.2rem;
+    transition: all 0.3s ease; /* Transição suave */
+    display: inline-block; /* Garante que o botão seja um bloco clicável */
+    margin-left: 10px; /* Espaçamento entre os botões */
+}
+
+.conhecer:hover {
+    background-color: var(--cor-de-link); /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+}
+
+/* Responsividade para todos os tipos de telas */
+
+/* Telas grandes (desktops e laptops) */
+@media (max-width: 1200px) {
+    .container__banner {
+        padding: 4rem; /* Reduz o espaçamento interno */
+    }
+
+    h3 {
+        font-size: 1.6rem; /* Reduz o tamanho do título */
+    }
+
+    h4 {
+        font-size: 1.2rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    p {
+        font-size: 1.1rem; /* Reduz o tamanho do parágrafo */
+        margin-bottom: 1.5rem; /* Reduz o espaço inferior */
+    }
+
+    .comecar, .conhecer {
+        padding: 12px 30px; /* Reduz o espaçamento interno dos botões */
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+    .container__banner {
+        padding: 3rem; /* Reduz ainda mais o espaçamento interno */
+    }
+
+    h3 {
+        font-size: 1.4rem; /* Reduz o tamanho do título */
+    }
+
+    h4 {
+        font-size: 1.1rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    p {
+        font-size: 1rem; /* Reduz o tamanho do parágrafo */
+        margin-bottom: 1.2rem; /* Reduz o espaço inferior */
+    }
+
+    .comecar, .conhecer {
+        padding: 10px 25px; /* Reduz o espaçamento interno dos botões */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Smartphones em modo paisagem */
+@media (max-width: 768px) {
+    .container__banner {
+        padding: 2rem; /* Reduz ainda mais o espaçamento interno */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Reduz o tamanho do título */
+    }
+
+    h4 {
+        font-size: 1rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduz o tamanho do parágrafo */
+        margin-bottom: 1rem; /* Reduz o espaço inferior */
+    }
+
+    /* Ajustes nos botões para caber melhor em telas pequenas */
+    .comecar, .conhecer {
+        display: block; /* Torna os botões blocos para ocupar toda a largura */
+        width: 100%; /* Faz os botões ocuparem toda a largura da tela */
+        margin-bottom: 15px; /* Adiciona espaço entre os botões */
+        padding: 12px 0; /* Reduz o espaçamento interno */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Smartphones em modo retrato */
+@media (max-width: 480px) {
+    .container__banner {
+        padding: 1.5rem; /* Reduz ainda mais o espaçamento interno */
+    }
+
+    h3 {
+        font-size: 1.1rem; /* Reduz o tamanho do título */
+    }
+
+    h4 {
+        font-size: 0.9rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    p {
+        font-size: 0.8rem; /* Reduz o tamanho do parágrafo */
+        margin-bottom: 0.8rem; /* Reduz o espaço inferior */
+    }
+
+    /* Ajustes nos botões para caber melhor em telas pequenas */
+    .comecar, .conhecer {
+        padding: 10px 0; /* Reduz o espaçamento interno */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    }
+}

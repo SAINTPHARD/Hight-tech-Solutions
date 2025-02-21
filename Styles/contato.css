@@ -1,0 +1,124 @@
+.form-container {
+    /* background-color: #ccc; */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima em dispositivos maiores */
+    text-align: center;
+    margin: 20px auto; /* Alinha o formulário no centro da tela e ajusta a margem */
+    margin-bottom: 6rem;
+}
+
+h2 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que os itens se quebrem em uma nova linha */
+}
+
+.form-group {
+    width: 48%;
+    text-align: left;
+    margin-bottom: 10px; /* Ajusta o espaçamento inferior nos dispositivos menores */
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical; /* Permite que o usuário redimensione o campo verticalmente */
+}
+
+
+/* From Uiverse.io by mrhyddenn */ 
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+
+/* Estilos de Responsividade */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column; /* Torna os campos um abaixo do outro em telas menores */
+    }
+
+    .form-group {
+        width: 100%; /* Cada campo ocupa a largura total */
+    }
+
+    .form-container {
+        padding: 20px; /* Reduz o preenchimento em dispositivos menores */
+        margin: 10px;
+    }
+
+    p {
+        font-size: 14px; /* Diminui o tamanho do texto explicativo */
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    input, textarea {
+        padding: 8px; /* Reduz o espaçamento interno para economizar espaço */
+    }
+
+    button2 {
+        width: 100%; /* O botão ocupa a largura completa em dispositivos muito pequenos */
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,164 @@
+/* Estilo global */
+body {
+  margin: 0; /* Remove margens padrão do corpo */
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background-color: rgb(235, 233, 233); /* Cor de fundo da página */
+}
+
+/* Cabeçalho */
+header {
+  display: flex; /* Alinha os itens horizontalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 7px; /* Adiciona espaçamento interno */
+  background-color: #fff; /* Fundo branco */
+  position: fixed; /* Fixa o cabeçalho no topo */
+  top: 0; /* Posiciona no topo da página */
+  left: 0; /* Alinha à esquerda */
+  right: 0; /* Alinha à direita */
+  height: 55px; /* Altura do cabeçalho */
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.menu__container {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  position: relative;
+  margin-left: 15px;
+}
+
+.menu__item a {
+  color: #3D3BF3;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 5px 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.menu__item:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu__item a {
+  padding: 8px 15px;
+  color: #666;
+  display: block;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.submenu__item a:hover {
+  background-color: #f5f5f5;
+  color: #3D3BF3;
+}
+
+.botao__login {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient(90deg, #3ba37a, #1e90c1);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.botao__login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 992px) {
+  .menu__item {
+    margin-left: 10px;
+  }
+  
+  .menu__item a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .menu__container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: none;
+  }
+
+  .menu__container.active {
+    display: block;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .menu__item {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+    padding-left: 20px;
+  }
+
+  .botao__login {
+    margin: 10px 15px;
+    text-align: center;
+    display: block;
+  }
+}

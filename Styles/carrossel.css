@@ -1,0 +1,93 @@
+/* Estilo do container principal do carrossel */
+.carousel-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilo do título */
+.carousel-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  max-width: 100px;
+  padding: 10px;
+}
+
+.contact-button {
+  margin-top: 20px;
+  background-color: #e36b27;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .carousel-slide {
+    min-width: 33.33%; /* 3 imagens por vez */
+  }
+  
+  .carousel-slide img {
+    max-width: 80px;
+  }
+  
+  .carousel-container h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-slide {
+    min-width: 50%; /* 2 imagens por vez */
+  }
+  
+  .carousel-slide img {
+    max-width: 70px;
+  }
+  
+  .carousel-container h2 {
+    font-size: 18px;
+  }
+  
+  .contact-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .carousel-slide {
+    min-width: 100%; /* 1 imagem por vez */
+  }
+  
+  .carousel-slide img {
+    max-width: 60px;
+  }
+}
